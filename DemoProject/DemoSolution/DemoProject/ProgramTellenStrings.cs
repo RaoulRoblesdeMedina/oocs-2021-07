@@ -6,17 +6,25 @@ using System.Threading.Tasks;
 
 namespace DemoProject
 {
-	class Program
+	class ProgramTellenStrings
 	{
-		static void Main(string[] args)
+		static void MainTellen(string[] args)
 		{
 
+			TelX1("x.x.x..xx.x.x", 'x'); // 7
+			TelX1("x.x.xxxxxxxxx..xx.x.x", 'x'); // 15
+			TelX1("+.+.pp..pp..", 'p'); // 4
+			TelX1("+.+.qq..pp..", 'q'); // q: 2
+			TelX1("+.+...pp..", '+'); // plusjes: 2
+			TelX1("+.+.....", '.'); // puntjes: 6
 
-			var getallen1 = new int[] { 4, 8, 9, 2, 9, 1 };
-			var getallen2 = new int[] { 99, 9, 2, 9, 1 };
+			Doe();
 
-			Tel9(getallen1); // 2
-			Tel9(getallen2); // 2
+			//var getallen1 = new int[] { 4, 8, 9, 2, 9, 1 };
+			//var getallen2 = new int[] { 99, 9, 2, 9, 1 };
+
+			//Tel9(getallen1); // 2
+			//Tel9(getallen2); // 2
 
 			//BijnaHonderdOfTweehonderd(93); // true
 			//BijnaHonderdOfTweehonderd(104); // true
@@ -29,6 +37,37 @@ namespace DemoProject
 			//SleepIn(false, true); // vakantie
 			//SleepIn(false, false); // weekend
 			//SleepIn(true, false); // niet uitslapen
+		}
+
+
+		static void Doe()
+		{
+			int index = 110;
+			
+			//"hoi".Trim()
+
+			do
+			{
+				Console.WriteLine("Hoi! " + index);
+				index = index + 20;
+			}
+			while (index < 100);
+		}
+
+		static void TelX1(string stringVar, char searchValue)
+		{
+			int count = 0;
+			int x = 14;
+			string bla = "";
+			char izard = 'q';
+			foreach (var s in stringVar)
+			{
+				if (s == searchValue)
+				{
+					count = count + 1;
+				}
+			}
+			Console.WriteLine("Count: " + count);
 		}
 
 		static void Tel9(int[] getallen)
