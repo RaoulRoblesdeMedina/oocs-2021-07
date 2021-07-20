@@ -6,42 +6,33 @@ using System.Threading.Tasks;
 
 namespace DemoProject
 {
-	class ProgramOefeningStarOut // voor leesbaarheid: max 100-300 regels
+	class ProgramOefeningStarOutJp
 	{
-		static void MainStarOut(string[] args) // voor leesbaarheid: max 10-20 regels
+		static void Main(string[] args)
 		{
-
 			string text = "sm*eilly";
 			//string text = "ab**cd";
 
-			for (int i = 0; i < text.Length; i++)
+			string result = "";
+			int index = 0;
+			while (index < text.Length)
 			{
-				if (text.Substring(i, 1) == "*")
+				if (text.Length > index + 1 &&
+					text.Substring(index + 1, 1) == "*")
 				{
-					string ervoor = text.Substring(i - 1, 1);
-					string erna = text.Substring(i + 1, 1);
-
-					Console.WriteLine("* gevonden! eromheen: " + ervoor + " en " + erna);
-
-					int endIndex = FindNextNonStarCharacter(text, i);
-
-					Console.WriteLine("eind index: " + endIndex);
-
-					int startIndex = i - 1;
-					text = text.Remove(startIndex, (endIndex + 1) - startIndex);
-
-					Console.WriteLine("iets verwijderd: " + text);
+					int endIndex = FindNextNonStarCharacter(text, index + 1);
+					index = endIndex + 1;
 				}
 				else
 				{
-
+					result += text.Substring(index, 1);
+					Console.WriteLine("result is nu: " + result);
+					index++;
 				}
 			}
-		}
 
-		// return value
-		// returnwaarde
-		// return parameter
+			Console.WriteLine("resultaat: " + result);
+		}
 
 		static int FindNextNonStarCharacter(string text, int startIndex)
 		{
