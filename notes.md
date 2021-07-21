@@ -111,3 +111,61 @@ veiligheid (voor webapplicaties):
 - Open Web Application Security Project - best practices
 
 OWASP Top 10
+
+## Types in C#
+
+primitive types
+
+int
+short
+bytes
+char
+bool
+
+reference types
+
+string
+ALLE classes
+
+## Object Orientation
+
+Wat is een class eigenlijk?
+
+- Collectie van code
+  - Methoden
+  - Velden
+  - Properties
+- Container
+- Blauwdruk
+- Lopende bank
+
+Voorbeelden van class (zie tekeningetjes)
+
+### Noun-phrase identification
+
+Als eindgebruiker wil ik graag flessen kunnen inleveren bij een statiegeldautomaat.
+
+Actor eindgebruiker
+
+- Fles
+  - Inlever()
+  inleveren  (methode)
+- Statiegeldautomaat
+  - Inlever()
+
+### Opbouw class
+
+```cs
+// hoe een class over het algemeen wordt opgebouwd:
+
+class NaamVanDieClass
+{
+	// eigenschappen: velden/properties
+
+	// constructor(s)
+
+	// static methoden
+
+	// methoden
+}
+```

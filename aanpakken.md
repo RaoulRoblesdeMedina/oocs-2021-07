@@ -108,3 +108,67 @@ voor VS Code:
 3. dotnet new console
 4. dotnet run
 5. Installeer extensie "C#" van Microsoft
+
+## Bob
+
+1. Loop door elk karakter van string
+   => hou een index (getalletje) bij van ieder karakter
+2. Kijk of het huidige karakter een b is
+3. Kijk of karakter (index + 2) een b is
+   => pas op richting het einde van de string ivm index out of bounds
+4. na de loop, niks (geen "bxb") gevonden? false.
+
+
+
+
+hallo daar   i  k  ben jp
+012345678910 11 12 13
+
+hallo bob hoe gaat het
+      ^ ^
+  index index + 2
+
+beterschap bob
+           ^ ^
+
+## Andere talen
+
+Java
+- Object-Oriented taal
+- strak, typesafe (net als C#)
+
+
+JavaScript
+- functionele taal  (heeft OO-elementen)
+- zeer flexibel, zeer dynamisch
+- voor simpele zaken - jee.
+  => gebruik het eens bij een enterprise-applicatie die > 10 jaar meegaat
+
+() {} ;
+
+haskell lisp elm - functionele talen
+
+
+
+
+Java == JavaScript
+
+ voor zovet
+
+Car == Carpet
+
+JP's geschiedenis aan talen:
+- PHP, SQL, HTML, CSS, JavaScript - 16+
+
+Hbo:
+- ASP (classic ASP, Microsoftvariant op PHP)
+- Delphi  (opvolgorder van Turbo Pascal)
+- Java
+- C    (low-level, rechtstreeks tegen het OS)
+  => strings bestaan niet in C.
+- C++ - strings
+- Assembler
+- SQL
+- C#  (laatste jaar)
+
+

@@ -23,5 +23,11 @@ namespace BankDemo
 		{
 			saldo = saldo - amount;
 		}
+
+		public void AddInterest(decimal interest)
+		{
+			var rente = (1 + (interest / 100));
+			saldo = Convert.ToInt64(saldo * rente);
+		}
 	}
 }
