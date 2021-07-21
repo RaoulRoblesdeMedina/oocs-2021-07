@@ -35,7 +35,7 @@ namespace DemoProject.OO
 
 			foreach (var car in cars)
 			{
-				Console.WriteLine($"Auto met kenteken {car.kenteken} is {car.Kleur} en komt uit {car.bouwjaar}");
+				Console.WriteLine($"Auto met kenteken {car.Kenteken} is {car.Kleur} en komt uit {car.Bouwjaar}");
 			}
 
 		}

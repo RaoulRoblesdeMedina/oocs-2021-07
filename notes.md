@@ -78,6 +78,20 @@ milleniumbug
 
 7GB - 2TB
 
+### Bitwise operators
+& // bitwise AND
+
+00110101
+01010100
+=========
+00010100
+
+enumeratie flags
+
+
+&& // conditional logical AND // 99,99% gevallen
+
+if(4 > 8 && 12 < 18)
 
 
 ## Lijsten
@@ -167,5 +181,46 @@ class NaamVanDieClass
 	// static methoden
 
 	// methoden
+}
+```
+
+## Piramideprogrammeren
+
+```cs
+for()
+{
+	if()
+	{
+		for()
+		{
+			while()
+			{
+				if()
+				{
+				}
+			}
+		}
+	}
+}
+```
+
+Verplaats geneste for/while/if's naar losse methoden voor betere leesbaarheid.
+
+## Java vs C#
+
+```java
+String x = "hoi";
+x = x + "q";
+
+if (x == "hoiq") // In java: false
+{
+
+}
+
+if ("hoi".equals(x)) {
+
+}
+if ("hoi".compareTo(x) == 0) {
+
 }
 ```

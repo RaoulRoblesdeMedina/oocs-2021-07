@@ -33,7 +33,7 @@ namespace DemoProject.OO
 			}
 		}
 
-		public short Bouwjaar { get; set }
+		public short Bouwjaar { get; set; }
 
 		public byte SchadevrijeJaren { get; set; }
 
