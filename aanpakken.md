@@ -172,3 +172,29 @@ Hbo:
 - C#  (laatste jaar)
 
 
+## Bank
+
+Stel, we hebben een Bank die heeft rekeningen.
+
+Er zijn meerdere soorten rekeningen:
+
+- GoldRekening
+  => 10% korting op alles wat je koopt
+  => rood staan is toegestaan
+
+- RegularRekening
+  => geen korting.
+  => geen rood staan.
+
+Een kleine applicatie maakt waarmee je een lijstje van rekening hebt en dat je dan met een rekening 
+een betaling kan uitvoeren.
+
+## Telefoon
+
+Die telefoonclass die moet apps ondersteunen.
+
+Ik wil op mijn telefoon wil ik de app Calculator kunnen gebruiken voor wat berekeningen.
+En ik wil dat de contacten bewaard worden in een AddressBook-app.
+
+IApp
+- Name

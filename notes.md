@@ -141,6 +141,47 @@ reference types
 string    null
 ALLE classes  null
 
+## Piramideprogrammeren
+
+```cs
+for()
+{
+	if()
+	{
+		for()
+		{
+			while()
+			{
+				if()
+				{
+				}
+			}
+		}
+	}
+}
+```
+
+Verplaats geneste for/while/if's naar losse methoden voor betere leesbaarheid.
+
+## Java vs C#
+
+```java
+String x = "hoi";
+x = x + "q";
+
+if (x == "hoiq") // In java: false
+{
+
+}
+
+if ("hoi".equals(x)) {
+
+}
+if ("hoi".compareTo(x) == 0) {
+
+}
+```
+
 ## Object Orientation
 
 Wat is een class eigenlijk?
@@ -184,43 +225,87 @@ class NaamVanDieClass
 }
 ```
 
-## Piramideprogrammeren
+### Pilars of OO
 
-```cs
-for()
-{
-	if()
-	{
-		for()
-		{
-			while()
-			{
-				if()
-				{
-				}
-			}
-		}
-	}
-}
-```
+4 pilaren van object-orientatie
 
-Verplaats geneste for/while/if's naar losse methoden voor betere leesbaarheid.
+1. Encapsulatie: afbakening
+2. Abstractie: vriendin.MaakOntbijt();
+3. Polymorphisme - interfaces/overerving - kanarie kan zowel een dier zijn als een kanarie - unittesten
+4. Overerving/inheritance - pratende dieren en rekeningen met korting
 
-## Java vs C#
 
-```java
-String x = "hoi";
-x = x + "q";
+Bird vogel - Animal
 
-if (x == "hoiq") // In java: false
-{
+static
 
-}
+Cow / IAnimal / Object
 
-if ("hoi".equals(x)) {
+### Interfaces
 
-}
-if ("hoi".compareTo(x) == 0) {
+- applicatie die je bouwt om twee systemen met elkaar te laten communiceren. => interfaces
+- blauwdruk van een class? nee.
 
-}
-```
+API => Application Programming Interface
+
+menselijke wereld:
+- stopcontact
+  => 230V  1.6A
+
+technisch:
+- kille, kouding scheiding tussen implementaties
+- beschrijft wat iets is/heeft/kan
+- 1 grote abstracte class - ALLES abstract is
+
+interface:
+- properties { get; set; }
+- methoden
+
+
+interface vs abstract class??
+=> zodra je code wil sharen tussen implementaties: abstract class
+=> kille koude scheiding zodat implementaties niks met elkaar te maken hebben: interface
+
+OOP interface om je API mee te realiseren
+- Extensies/Plugins
+
+
+Java... 10? 9? "default implementations" op interfaces
+
+C# 8 nu ook default implementations
+
+### static
+
+static is niet gebonden aan een instantie
+
+het is overkoepelend
+
+static dingen roep je altijd aan op de class, niet op de instance
+
+## Aantallen
+
+3 categorieen aan classes:
+
+1. Al je eigen classes
+   => zo betrouwbaar als dat je jezelf, je collega's en je organisatie vertrouwt
+   => hoe belangrijk wordt kwaliteit geacht binnen je organisatie
+   => jij kent de cultuur van je organisatie beter dan anderen buiten je organisatie
+   => 30% praat ik tegen mijn classes, 70% tegen de rest    (weer hele ruwe schatting)
+
+
+2. Alles wat mee wordt geleverd met het framework  (eigenlijk ook third-party)
+   => behoorlijk betrouwbaar
+   => goed geoptimaliseerd
+   => 30.000  (hele ruwe schatting)
+
+3. Third-party (wat anderen maken)
+   => betrouwbaarheid?
+   => hoe actief wordt het onderhouden?
+   => hoeveel mensen gebruiken het?
+   => wie zit erachter?
+   => betaal je ervoor? garanties in je SLA? is het open-source?
+   => ... berekening, charting library, servicebus, json serializer
+   => gemiddeld paar honderd (ruim genomen)
+
+
+
