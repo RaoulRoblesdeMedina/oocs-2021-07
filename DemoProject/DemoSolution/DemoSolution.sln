@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalInheritanceDemo", "An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WerkInheritanceDemo", "WerkInheritanceDemo\WerkInheritanceDemo.csproj", "{03AA4ADF-6923-49EB-9978-7AE82892B8CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticDemo", "StaticDemo\StaticDemo.csproj", "{605790A3-6E6F-4537-995F-8F8D13DE067E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalInterfaceDemo", "AnimalInterfaceDemo.cs\AnimalInterfaceDemo.csproj", "{82676EE2-52D4-4B63-A725-7620CCFB720D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{03AA4ADF-6923-49EB-9978-7AE82892B8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03AA4ADF-6923-49EB-9978-7AE82892B8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03AA4ADF-6923-49EB-9978-7AE82892B8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605790A3-6E6F-4537-995F-8F8D13DE067E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605790A3-6E6F-4537-995F-8F8D13DE067E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605790A3-6E6F-4537-995F-8F8D13DE067E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605790A3-6E6F-4537-995F-8F8D13DE067E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82676EE2-52D4-4B63-A725-7620CCFB720D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82676EE2-52D4-4B63-A725-7620CCFB720D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82676EE2-52D4-4B63-A725-7620CCFB720D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82676EE2-52D4-4B63-A725-7620CCFB720D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

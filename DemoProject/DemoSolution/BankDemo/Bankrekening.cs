@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankDemo
 {
-	class Bankrekening
+	public interface Bankrekening
 	{
 		public string iban;
 
@@ -26,8 +26,13 @@ namespace BankDemo
 
 		public void AddInterest(decimal interest)
 		{
+
+			// datamodel wijzigingen
+
 			var rente = (1 + (interest / 100));
 			saldo = Convert.ToInt64(saldo * rente);
 		}
+
+		public abstract void Buy(long price);
 	}
 }

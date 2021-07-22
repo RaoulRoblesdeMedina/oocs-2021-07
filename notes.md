@@ -130,16 +130,16 @@ OWASP Top 10
 
 primitive types
 
-int
-short
-bytes
-char
-bool
+int   0
+short 0
+byte  0
+char  ''
+bool  false
 
 reference types
 
-string
-ALLE classes
+string    null
+ALLE classes  null
 
 ## Object Orientation
 

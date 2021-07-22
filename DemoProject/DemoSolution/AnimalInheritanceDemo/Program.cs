@@ -13,7 +13,7 @@ namespace AnimalInheritanceDemo
 			animals[1] = new Wurm();
 			animals[2] = new Mouse();
 
-
+			
 			//Ding.Iets;
 			//Hoi.Iets;
 

@@ -38,6 +38,6 @@ namespace DemoProject.OO
 				Console.WriteLine($"Auto met kenteken {car.Kenteken} is {car.Kleur} en komt uit {car.Bouwjaar}");
 			}
 
-		}
 	}
+		}
 }
