@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace PhoneLab
 {
-    public class Phone
+    public interface IApp
     {
-		public string Merk { get; set; }
+		public string Name { get; }
 
-		public string Type { get; set; }
 
-		public List<IApp> Apps { get; set; } = new List<IApp>();
 	}
 }

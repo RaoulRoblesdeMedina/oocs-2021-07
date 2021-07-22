@@ -18,6 +18,15 @@ namespace AnimalInterfaceDemo.cs
 			{
 				animal.Move();
 			}
+
+
+			// Polymorphisme
+			Cow cow = new Cow();
+			IAnimal cow2 = new Cow();
+			Object cow3 = new Cow();
+
+			IAnimal dier;
+
 		}
 	}
 }
