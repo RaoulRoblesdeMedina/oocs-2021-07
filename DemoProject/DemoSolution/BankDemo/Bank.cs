@@ -8,7 +8,7 @@ namespace BankDemo
 {
 	class Bank
 	{
-		public Bankrekening[] accounts = new Bankrekening[10];
+		public IBankrekening[] accounts = new IBankrekening[10];
 
 		public long TotalAmountOfMoney()
 		{
@@ -17,13 +17,13 @@ namespace BankDemo
 			{
 				if (account != null) // als er een geheugenadres in zit
 				{
-					sum = sum + account.saldo;
+					sum = sum + account.Saldo;
 				}
 			}
 			return sum;
 		}
 
-		public void TransferMoney(Bankrekening from, Bankrekening to, long amount)
+		public void TransferMoney(IBankrekening from, IBankrekening to, long amount)
 		{
 			from.Withdraw(amount);
 			to.Deposit(amount);
@@ -47,7 +47,7 @@ namespace BankDemo
 				if (account != null) // als er een geheugenadres in zit
 				{
 					// string interpolation
-					Console.WriteLine($"{account.rekeninghouder}\t{account.iban}\t{account.saldo}EUR");
+					Console.WriteLine($"{account.Rekeninghouder}\t{account.Iban}\t{account.Saldo}EUR");
 				}
 			}
 

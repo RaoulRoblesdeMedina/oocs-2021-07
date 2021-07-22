@@ -6,14 +6,36 @@ using System.Threading.Tasks;
 
 namespace BankDemo
 {
-	public class RegularRekening : Bankrekening
+	public class RegularRekening : IBankrekening
 	{
-		public override void Buy(long price)
+		public string Iban { get; set; }
+
+		public long Saldo { get; set; }
+
+		public string Rekeninghouder { get; set; }
+
+		public void Deposit(long amount)
+		{
+			Saldo += amount;
+		}
+
+		public void Withdraw(long amount)
+		{
+			Saldo -= amount;
+		}
+
+		public void AddInterest(decimal interest)
+		{
+			var rente = (1 + (interest / 100));
+			Saldo = Convert.ToInt64(Saldo * rente);
+		}
+
+		public void Buy(long price)
 		{
 			Console.WriteLine("Zonder rood staan iets betalen");
-			if (saldo - price > 0)
+			if (Saldo - price > 0)
 			{
-				saldo -= price;
+				Saldo -= price;
 			}
 			else
 			{

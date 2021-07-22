@@ -9,19 +9,19 @@ namespace BankDemo
 			var ing = new Bank();
 
 			var donald = new GoldRekening();
-			donald.rekeninghouder = "Donald Drumpf";
-			donald.saldo = 1_400_000;
-			donald.iban = "US94839095965";
+			donald.Rekeninghouder = "Donald Drumpf";
+			donald.Saldo = 1_400_000;
+			donald.Iban = "US94839095965";
 			
 			var jeffy = new GoldRekening();
-			jeffy.rekeninghouder = "Jeffrey Bezos";
-			jeffy.iban = "US90349404305";
-			jeffy.saldo = 158_398_385_000;
+			jeffy.Rekeninghouder = "Jeffrey Bezos";
+			jeffy.Iban = "US90349404305";
+			jeffy.Saldo = 158_398_385_000;
 
 			var janmodaal = new RegularRekening();
-			janmodaal.rekeninghouder = "Jan Modaal";
-			janmodaal.iban = "NL06RABO03934";
-			janmodaal.saldo = 115;
+			janmodaal.Rekeninghouder = "Jan Modaal";
+			janmodaal.Iban = "NL06RABO03934";
+			janmodaal.Saldo = 115;
 
 			ing.accounts[0] = donald;
 			ing.accounts[1] = jeffy;
@@ -48,7 +48,7 @@ namespace BankDemo
 
 			donald.Buy(5000);
 
-			janmodaal.Buy(26000);
+			janmodaal.Buy(26);
 
 			ing.PrintOverview();
 

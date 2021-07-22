@@ -12,7 +12,7 @@ namespace WerkInheritanceDemo
 
 		public VasteWerknemer()
 		{
-			Type = "Vaste werknemer";
+			//Type = "Vaste werknemer";
 		}
 
 		public override decimal CalculateSalary()
