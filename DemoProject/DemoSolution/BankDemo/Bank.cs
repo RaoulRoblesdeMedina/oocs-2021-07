@@ -14,6 +14,16 @@ namespace BankDemo
 	{
 		public IBankrekening[] accounts = new IBankrekening[10];
 
+		// verantwoordelijk voelen voor de data in deze class
+		//public void AddAccount(IBankrekening newBankAccount)
+		//{
+		//	// kredietcheck
+
+		//	accounts[3] = newBankAccount;
+		//}
+
+
+
 		public long TotalAmountOfMoney()
 		{
 
@@ -42,24 +52,24 @@ namespace BankDemo
 
 		public void AddInterest()
 		{
-			foreach (var account in accounts)
+
+			// if-statement in foreach is nu vervangen door de .Where() op dezelfde regel
+
+			foreach (var account in accounts.Where(x => x != null))
 			{
-				if (account != null) // als er een geheugenadres in zit
-				{
-					account.AddInterest(1.5M);
-				}
+				account.AddInterest(1.5M);
 			}
 		}
 
 		public void PrintOverview()
 		{
-			foreach (var account in accounts)
+
+			// if-statement in foreach is nu vervangen door de .Where() op dezelfde regel
+
+			foreach (var account in accounts.Where(x => x != null))
 			{
-				if (account != null) // als er een geheugenadres in zit
-				{
-					// string interpolation
-					Console.WriteLine($"{account.Rekeninghouder}\t{account.Iban}\t{account.Saldo}EUR");
-				}
+				// string interpolation
+				Console.WriteLine($"{account.Rekeninghouder}\t{account.Iban}\t{account.Saldo}EUR");
 			}
 
 			Console.WriteLine("================");

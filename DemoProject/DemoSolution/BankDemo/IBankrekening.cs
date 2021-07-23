@@ -12,7 +12,7 @@ namespace BankDemo
 	// testbaarheid: unittests => interfaces komen hier ook veel terug
 	public interface IBankrekening
 	{
-		public string Iban { get; }
+		public string Iban { get; set; }
 
 		public long Saldo { get; }
 

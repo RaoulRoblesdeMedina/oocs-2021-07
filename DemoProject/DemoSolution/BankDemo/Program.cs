@@ -11,7 +11,7 @@ namespace BankDemo
 			var donald = new GoldRekening();
 			donald.Rekeninghouder = "Donald Drumpf";
 			donald.Saldo = 1_400_000;
-			donald.Iban = "US94839095965";
+			donald.Iban = "NL06RABO0385893239";
 			
 			var jeffy = new GoldRekening();
 			jeffy.Rekeninghouder = "Jeffrey Bezos";
