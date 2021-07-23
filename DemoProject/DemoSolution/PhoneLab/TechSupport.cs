@@ -46,6 +46,7 @@ namespace PhoneLab
 			//}
 
 			//// als er geen adresboek in de applijst is
+			///// throw new Exception();
 			//return null;
 		}
 	}

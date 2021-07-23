@@ -49,7 +49,7 @@ namespace BankDemo
 
 			donald.Buy(5000);
 
-			janmodaal.Buy(26);
+			janmodaal.Buy(26000);
 
 			ing.PrintOverview();
 

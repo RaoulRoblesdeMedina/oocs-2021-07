@@ -32,6 +32,12 @@ namespace BankDemo
 
 		public void Buy(long price)
 		{
+			// hier try-catch? hangt van de gebruiksvriendelijkheid van je project
+			// - zit er een UI vast aan je applicatie? dan try-catch
+			//   => misschien kun je globale errorhandler ergens registreren
+			// - ben je een 1 of andere backenservice? dan exception.
+
+
 			Console.WriteLine("Zonder rood staan iets betalen");
 			if (Saldo - price > 0)
 			{
@@ -39,7 +45,7 @@ namespace BankDemo
 			}
 			else
 			{
-				Console.WriteLine("whooaaa dat is niet genoeg saldo");
+				throw new Exception("Harder werken voor je geld gozert");
 			}
 		}
 	}
