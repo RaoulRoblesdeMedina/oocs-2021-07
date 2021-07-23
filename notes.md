@@ -307,5 +307,58 @@ static dingen roep je altijd aan op de class, niet op de instance
    => ... berekening, charting library, servicebus, json serializer
    => gemiddeld paar honderd (ruim genomen)
 
+## Delegates
+
+// handige methoden om met lijstjes om te gaan:
+
+// LINQ extension methods
+// https://dotnettutorials.net/lesson/linq-extension-methods/
+
+.Where(x => x...)
+.Skip(4)
+.Take(5)
+.First(x => x.Description.StartsWith("B"))
+.Sum()
+.Max()
+.Min()
 
 
+Pak je projecten erbij en kijk waar je delegates/lambdas kan gebruiken.
+
+Als vuistregel: kijk naar foreaches
+
+### Take/skip
+
+.Skip(3).Take(5) op:      1 2 3 4 5 6 7 8 9 10
+
+// skip dit
+1
+2
+3
+
+// take dit
+4
+5
+6
+7
+8
+
+// negeer de rest
+9
+10
+
+.Take(5).Skip(3) op:      1 2 3 4 5 6 7 8 9 10
+
+// take 5
+1 // skip deze
+2 // skip deze
+3 // skip deze
+4
+5
+
+// negeer dit
+6
+7
+8
+9
+10
