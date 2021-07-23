@@ -28,6 +28,7 @@ namespace BankDemo
 			ing.accounts[2] = janmodaal;
 
 			var total = ing.TotalAmountOfMoney();
+			Console.WriteLine("totaal: " + total);
 			//Console.WriteLine("Jan heeft nu " + janmodaal.saldo + " euros");
 
 			//ing.TransferMoney(jeffy, janmodaal, 10_000_000_000);

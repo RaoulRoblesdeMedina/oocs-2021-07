@@ -1,4 +1,8 @@
-﻿using System;
+﻿
+
+// je uset hier namespaces
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,15 +16,22 @@ namespace BankDemo
 
 		public long TotalAmountOfMoney()
 		{
-			long sum = 0;
-			foreach (var account in accounts)
-			{
-				if (account != null) // als er een geheugenadres in zit
-				{
-					sum = sum + account.Saldo;
-				}
-			}
-			return sum;
+
+			// chaining
+			//accounts.Where(x => x != null).Where(x => x.Saldo > 5).Skip(2).Take(3);
+
+			return accounts.Where(x => x != null).Sum(x => x.Saldo);
+
+
+			//long sum = 0;
+			//foreach (var account in accounts)
+			//{
+			//	if (account != null) // als er een geheugenadres in zit
+			//	{
+			//		sum = sum + account.Saldo;
+			//	}
+			//}
+			//return sum;
 		}
 
 		public void TransferMoney(IBankrekening from, IBankrekening to, long amount)
