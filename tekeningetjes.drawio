@@ -922,4 +922,33 @@
             </root>
         </mxGraphModel>
     </diagram>
+    <diagram id="SPVRvYGEfrh9wwu8xAp9" name="Lijstjes">
+        <mxGraphModel dx="1054" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="C5L48iDRTXbQL1-Q3Ofm-0"/>
+                <mxCell id="C5L48iDRTXbQL1-Q3Ofm-1" parent="C5L48iDRTXbQL1-Q3Ofm-0"/>
+                <mxCell id="C5L48iDRTXbQL1-Q3Ofm-2" value="IEnumerable" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="C5L48iDRTXbQL1-Q3Ofm-1">
+                    <mxGeometry x="200" y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="C5L48iDRTXbQL1-Q3Ofm-3" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="C5L48iDRTXbQL1-Q3Ofm-1" source="C5L48iDRTXbQL1-Q3Ofm-4" target="C5L48iDRTXbQL1-Q3Ofm-2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330" y="280" as="sourcePoint"/>
+                        <mxPoint x="310" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="C5L48iDRTXbQL1-Q3Ofm-4" value="Array" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="C5L48iDRTXbQL1-Q3Ofm-1">
+                    <mxGeometry x="290" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="C5L48iDRTXbQL1-Q3Ofm-5" value="List" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="C5L48iDRTXbQL1-Q3Ofm-1">
+                    <mxGeometry x="80" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="C5L48iDRTXbQL1-Q3Ofm-6" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="C5L48iDRTXbQL1-Q3Ofm-1" source="C5L48iDRTXbQL1-Q3Ofm-5" target="C5L48iDRTXbQL1-Q3Ofm-2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510" y="350" as="sourcePoint"/>
+                        <mxPoint x="560" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
