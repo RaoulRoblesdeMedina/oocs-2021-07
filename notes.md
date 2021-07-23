@@ -362,3 +362,64 @@ Als vuistregel: kijk naar foreaches
 8
 9
 10
+
+## Unittesting
+
+Wat is unittesten??
+
+- Specifiek gedeelte van je code testen
+- Elk mogelijk scenario hoort te worden getest
+  => ...
+
+
+een vorm van documentatie: uitvoerbare documentatie
+
+UML-diagram niet altijd bijgewerkt met code-ontwikkelingen
+
+
+
+Test Driven Development
+
+1. Schrijf een test
+2. Run die test => faalt
+3. Schrijf code // implementeer
+4. Run die test => slaagt
+5. Refactor // maak code mooi
+
+Repeat.
+
+"technical debt"
+
+wat moet je unittesten? "interessante code"
+
+- loopjes
+- if-statements
+- verschillende parameters waar een berekening/bewerking
+
+
+
+Jullie mogen gaan unittesten.
+=> Bank of GoldRekening hebben interessante logica om te testen
+=> TechSupport met kopieren van contacten kan ook (maar is iets ingewikkelder)
+
+
+## Regular expressions
+
+invoervalidatie
+
+telefoonnummer
+email
+postcode
+
+1234 AB
+1234AB
+
+
+NL06RABO0385989339
+
+
+regex:
+
+^[0-9]{4} ?[A-Z]{2}$
+
+VVD
